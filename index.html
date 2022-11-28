@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+      function welcome() {
+        alert("Welcome " + document.forms["frm1"]["fname"].value + "!");
+      }
+    </script>
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <form name="frm1" onsubmit="welcome()">
+      <h2>Personal Details</h2>
+      <label id="field_label">Name:</label>
+      <input type="text" name="fname" /> <br /><br />
+      <label id="field_label">DOB:</label>
+      <input type="date" /> <br /><br />
+      <label id="field_label">Sex:</label>
+      <input type="radio" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" value="female" />
+      <label for="male">Female</label> <br /><br />
+      <label id="field_label">Favourite Games:</label>
+      <input type="checkbox" value="Badminton" />
+      <label for="Baminton">Baminton</label>
+      <input type="checkbox" value="Cricket" />
+      <label for="Baminton">Cricket</label>
+      <input type="checkbox" value="Basketball" />
+      <label for="Baminton">Basketball</label>
+      <input type="checkbox" value="VolleyBall" />
+      <label for="Baminton">VolleyBall</label>
+      <input type="checkbox" value="FootBall" />
+      <label for="Baminton">FootBall</label><br /><br />
+      <button class="submit_button">Submit</button>
+    </form>
+  </body>
+</html>
